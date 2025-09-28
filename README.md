@@ -20,7 +20,6 @@ Cross-platform NTFS file system artifact parser written in Rust, providing a mod
 | `$Boot` | Boot Sector | ✅ Implemented |
 | `$SDS` | Security Descriptors | ✅ Implemented |
 | `$I30` | Directory Index | ✅ Implemented |
-| `$LogFile` | NTFS Log File | 🚧 Planned |
 
 ## Installation
 
@@ -241,18 +240,6 @@ src/
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Comparison with Original MFTECmd
-
-| Feature | MFTECmd (C#) | mfte-rs (Rust) |
-|---------|-------------|----------------|
-| Cross-platform | Windows only | Windows, Linux, macOS |
-| Memory Safety | Managed (GC) | Memory safe (no GC) |
-| Performance | Good | Excellent |
-| Dependencies | .NET Framework/Core | None (static binary) |
-| File Size | ~50MB with deps | ~5MB static binary |
-| Build Time | Fast | Fast |
-| Output Formats | CSV, JSON, Body | CSV, JSON, Body + Table |
 
 ## Acknowledgments
 
